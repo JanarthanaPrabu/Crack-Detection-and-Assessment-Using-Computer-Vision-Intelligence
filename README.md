@@ -19,19 +19,20 @@ M.Tech project, Amrita School of Computing, Coimbatore.
 
 ```
 .
-├── README.md                     this file
-├── INSTALL.md                    installation and run guide
-├── requirements.txt              Python packages
-├── notebooks/
-│   ├── crack-detection-sdnet-2018.ipynb          Phase 1, grid-based (patch) descriptors
-│   ├── without-patch.ipynb                       Phase 1, patch-free (global) descriptors
-│   ├── gloh-crack-detection.ipynb                Phase 1, GLOH (128-D)
-│   ├── jsonfile_UAV_Dataset.ipynb                Phase 2, UAV-GCD images with JSON annotations
-│   └── Edge_detction_applied_Hough_Transform.ipynb   Edge detection and Hough transform pipeline
 ├── data/
 │   ├── Benchmark_Results.xlsx        accuracy, precision, recall, F1 per feature and classifier
 │   └── Literature_Survey.xlsx        17-paper literature survey
-└── docs/                         documentation portal (published with GitHub Pages)
+├── docs/                             documentation portal (published with GitHub Pages)
+├── notebooks/
+│   ├── Edge_detction_applied_Hough_Transform.ipynb   Phase 2, edge detection and Hough transform
+│   ├── crack-detection-sdnet-2018.ipynb              Phase 1, grid-based (patch) descriptors
+│   ├── gloh-crack-detection.ipynb                    Phase 1, GLOH (128-D)
+│   ├── jsonfile_UAV_Dataset.ipynb                    Phase 2, UAV-GCD images with JSON annotations
+│   └── without-patch.ipynb                           Phase 1, patch-free (global) descriptors
+├── .gitignore                        files Git should not track
+├── INSTALL.md                        installation and run guide
+├── README.md                         this file
+└── requirements.txt                  Python packages
 ```
 
 ## Notebooks
