@@ -1,0 +1,26 @@
+# Core scientific stack
+numpy
+pandas
+scipy
+matplotlib
+seaborn
+scikit-learn
+xgboost
+tqdm
+Pillow
+joblib
+
+# Computer vision
+# opencv-contrib-python is needed for SURF (cv2.xfeatures2d). If your OpenCV build has no
+# SURF, the notebooks fall back to FAST + SIFT/ORB descriptors automatically.
+opencv-contrib-python
+scikit-image
+
+# Notebook interface
+jupyter
+ipywidgets
+
+# Optional: GPU acceleration for the BRISK notebook cell (NVIDIA GPU + RAPIDS only).
+# Install from https://rapids.ai if you want it; the cell falls back to CPU otherwise.
+# cuml
+# cupy
