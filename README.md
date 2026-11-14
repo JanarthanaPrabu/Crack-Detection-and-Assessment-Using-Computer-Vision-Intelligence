@@ -62,7 +62,7 @@ See [INSTALL.md](INSTALL.md). The easiest way is to run the notebooks on Kaggle 
 ## Reproducibility notes
 
 - **Random image sampling.** Each notebook picks a fixed number of images per class (for example 2,000) after a seeded shuffle of the file list.
-  The order of that list can differ between environments, so numbers can change by about 1-2 percentage points between runs. The saved outputs in each notebook are the results reported in the project.
+  The order of that list can differ between environments, so numbers can change by about 1-2 percentage points between runs. The saved outputs in each notebook come from the run stored in that notebook. The Spatial HOG values in `data/Benchmark_Results.xlsx` differ slightly from the Spatial HOG outputs saved in the notebook (see the next note).
 - **Two Spatial HOG variants.** `crack-detection-sdnet-2018.ipynb` contains a 345-D vector (HOG plus gradient statistics) and a 320-D HOG-only vector. The headings in the notebook say which is which.
 - **SURF.** SURF needs an OpenCV build that includes the non-free modules. If SURF is not available, the notebooks automatically fall back to FAST keypoints with SIFT or ORB descriptors.
 - **Model files.** Running the GLOH notebook creates `model_gloh_2c.pkl`, `label_encoder_2c.pkl` and `kmeans_codebook.pkl`. These are not stored in the repository.
